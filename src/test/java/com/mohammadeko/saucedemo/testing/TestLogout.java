@@ -1,8 +1,7 @@
 package com.mohammadeko.saucedemo.testing;
 
 import com.mohammadeko.saucedemo.testing.pageobject.drivers.DriverSingleton;
-import com.mohammadeko.saucedemo.testing.pageobject.pages.AddToCart;
-import com.mohammadeko.saucedemo.testing.pageobject.pages.LogOut;
+import com.mohammadeko.saucedemo.testing.pageobject.pages.Logout;
 import com.mohammadeko.saucedemo.testing.pageobject.pages.Login;
 import com.mohammadeko.saucedemo.testing.pageobject.utils.Constants;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +14,7 @@ import org.testng.annotations.Test;
 public class TestLogout {
     public static WebDriver driver;
     private Login login;
-    private LogOut logout;
+    private Logout logout;
 
     @BeforeClass
     public void setUp() {
@@ -27,7 +26,7 @@ public class TestLogout {
     @BeforeMethod
     public void pageObject() {
         login = new Login();
-        logout = new LogOut();
+        logout = new Logout();
     }
 
     @AfterClass
